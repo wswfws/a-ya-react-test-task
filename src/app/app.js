@@ -1,13 +1,14 @@
 import React from 'react'
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {ROUTE_CONFIG} from "../config/route-config";
+import ProductListPage from "../pages/productList/productListPage";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route
         index path={ROUTE_CONFIG.ROOT}
-        element={<>Список товаров</>}
+        element={<ProductListPage/>}
       />
       <Route
         path={ROUTE_CONFIG.PRODUCT}

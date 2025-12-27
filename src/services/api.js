@@ -6,6 +6,23 @@ const sizes = [
   { id: 5, label: 'XL', number: 52 },
 ]
 
+/**
+ * @typedef {object} ProductColor
+ * @property {number} id - Уникальный идентификатор.
+ * @property {string} name - Полное имя.
+ * @property {string[]} images - Список ссылок на картинки товара.
+ * @property {number} price - Цена товара.
+ * @property {string} description - Описание.
+ * @property {number[]} sizes - Достыпные варианты товара.
+ */
+
+/**
+ * @typedef {object} Product
+ * @property {number} id - Уникальный идентификатор.
+ * @property {string} name - Полное имя.
+ * @property {ProductColor[]} colors - Варианты товара.
+ */
+
 const products = [
   {
     id: 1,
