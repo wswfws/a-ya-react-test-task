@@ -1,14 +1,20 @@
+import './styles.css'
+import useAppRoutes from "../../app/use-app-routes";
+
 /**
  * @param {Product} product
  * @returns {JSX.Element}
  * @constructor
  */
 export default function Product({product}) {
+
+  const {getProductPath} = useAppRoutes();
+
   return (
-    <div className={"product"}>
+    <a className={"product"} href={getProductPath(product.id)}>
       <h2 className={"product__name"}>{product.name}</h2>
       <img className={"product__image"} alt={product.name} src={getProductImage(product)}/>
-    </div>
+    </a>
   )
 }
 
