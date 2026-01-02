@@ -28,11 +28,11 @@ class CartStore {
     });
   }
 
-  addItem({product, colorId, sizeId}) {
+  addItem({product, colorId, sizeId, imageUrl}) {
     if (!product) return;
     const exists = this.items.find(i => i.productId === product.id && i.colorId === colorId && i.sizeId === sizeId);
     if (exists) return;
-    this.items.push({productId: product.id, colorId, sizeId, product});
+    this.items.push({productId: product.id, colorId, sizeId, product, imageUrl});
   }
 
   removeItem({productId, colorId, sizeId}) {
