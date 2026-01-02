@@ -1,5 +1,6 @@
 import './styles.css'
 import useAppRoutes from "../../app/use-app-routes";
+import { Link } from 'react-router-dom';
 
 /**
  * @param {Product} product
@@ -9,10 +10,10 @@ export default function Product({product}) {
   const {getProductPath} = useAppRoutes();
 
   return (
-    <a className={"product"} href={getProductPath(product.id)}>
+    <Link className={"product"} to={getProductPath(product.id)}>
       <h2 className={"product__name"}>{product.name}</h2>
       <img className={"product__image"} alt={product.name} src={getProductImage(product)}/>
-    </a>
+    </Link>
   )
 }
 

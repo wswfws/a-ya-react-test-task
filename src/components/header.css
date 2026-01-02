@@ -56,3 +56,33 @@
     background: rgba(255, 255, 255, 0.12);
 }
 
+.cart-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cart-button svg {
+    display: block;
+    flex-shrink: 0;
+}
+
+.cart-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.cart-badge {
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+}
