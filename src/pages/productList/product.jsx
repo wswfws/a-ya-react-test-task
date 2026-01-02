@@ -3,8 +3,6 @@ import useAppRoutes from "../../app/use-app-routes";
 
 /**
  * @param {Product} product
- * @returns {JSX.Element}
- * @constructor
  */
 export default function Product({product}) {
 

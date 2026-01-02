@@ -2,6 +2,7 @@ import React from 'react'
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {ROUTE_CONFIG} from "../config/route-config";
 import ProductListPage from "../pages/productList/productListPage";
+import ProductDetailsPage from "../pages/productDetails/productDetailsPage";
 
 const AppRoutes = () => {
   return (
@@ -12,7 +13,7 @@ const AppRoutes = () => {
       />
       <Route
         path={ROUTE_CONFIG.PRODUCT}
-        element={<>Детальная страница товар</>}
+        element={<ProductDetailsPage />}
       />
       <Route
         path={ROUTE_CONFIG.CART}
