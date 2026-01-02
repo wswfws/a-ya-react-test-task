@@ -11,7 +11,7 @@ export default function ImageGallery({images = [], currentIndex = 0, onChangeInd
       <div className={"product-details__main-image-container"}>
         <button className="gallery__nav nav--prev" onClick={prev} disabled={currentIndex === 0} aria-label="prev">‹
         </button>
-        <img className="product-details__main-image" src={images[currentIndex]} alt={`image-${currentIndex}`}/>
+        <img className="product-details__main-image" src={images[currentIndex]} alt={`product-view-${currentIndex}`}/>
         <button className="gallery__nav nav--next" onClick={next} disabled={currentIndex === images.length - 1}
                 aria-label="next">›
         </button>
