@@ -4,7 +4,7 @@ import {ROUTE_CONFIG} from "../config/route-config";
 import ProductListPage from "../pages/productList/productListPage";
 import ProductDetailsPage from "../pages/productDetails/productDetailsPage";
 import CartPage from "../pages/cart/cartPage";
-import CartButton from "../components/CartButton";
+import Header from "../components/Header";
 
 const AppRoutes = () => {
   return (
@@ -32,7 +32,7 @@ const AppRoutes = () => {
 export default function App() {
   return (
     <BrowserRouter>
-      <CartButton />
+      <Header />
       <AppRoutes/>
     </BrowserRouter>
   );
