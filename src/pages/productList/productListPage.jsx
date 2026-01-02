@@ -13,7 +13,7 @@ export default function ProductListPage() {
     }).catch((err) => {
       console.error(err);
     }).finally(() => setLoading(false));
-  });
+  }, []);
 
   if (loading) {
     return (

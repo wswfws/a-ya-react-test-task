@@ -3,6 +3,8 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {ROUTE_CONFIG} from "../config/route-config";
 import ProductListPage from "../pages/productList/productListPage";
 import ProductDetailsPage from "../pages/productDetails/productDetailsPage";
+import CartPage from "../pages/cart/cartPage";
+import CartButton from "../components/CartButton";
 
 const AppRoutes = () => {
   return (
@@ -17,7 +19,7 @@ const AppRoutes = () => {
       />
       <Route
         path={ROUTE_CONFIG.CART}
-        element={<>Корзина</>}
+        element={<CartPage />}
       />
       <Route
         path={ROUTE_CONFIG.WILDCARD}
@@ -30,6 +32,7 @@ const AppRoutes = () => {
 export default function App() {
   return (
     <BrowserRouter>
+      <CartButton />
       <AppRoutes/>
     </BrowserRouter>
   );
